@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>チャットボット</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <h1 class="title">チャットボット</h1>
+        <form action="/" method="post" class="chat-form">
+            <label for="user-input" class="label">メッセージを入力してください:</label><br>
+            <input type="text" id="user-input" name="text" class="input"><br><br>
+            <button type="submit" class="button">送信</button>
+        </form>
+        <div id="response-container" class="response-container">
+            <!-- ここに応答が表示されます -->
+            {{response}}
+        </div>
+    </div>
+</body>
+</html>
